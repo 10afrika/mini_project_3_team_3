@@ -23,7 +23,7 @@ function Chart({ weatherChart }) {
           {/* <!-- The left line --> */}
           <div className="flex-grow h-px bg-gray-400"></div>
 
-          <div className=" flex justify-center gap-8 w-full max-w-full  mt-6">
+          <div className=" flex justify-center gap-8 w-full max-w-full mx-auto  mt-6">
             {weatherChart && (
               <Image
                 src={weatherChart}

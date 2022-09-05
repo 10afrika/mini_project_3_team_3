@@ -15,8 +15,7 @@ const WeatherChart = () => {
       .get(`https://api.weather.6afrika.mbandevelopers.com/weather-forecast`, {
         params: { city_name: cityName },
       })
-      .then((res) => res.data)
-      .catch((err) => console.log(err.message));
+      .then((res) => res.data);
     weatherData.forEach((data) => {
       temps.push(data.Temperature);
       dates.push(

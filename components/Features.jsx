@@ -162,7 +162,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
                     {renderSwitch(currentWeather.data[0].weather.description)}
                     {iconvalue}
                   </div>
-                  {currentWeather.data[0].temp}
+                  {Math.round(parseInt(currentWeather.data[0].temp))}
                 </div>
                 <div className="flex justify-center items-center text-xl">
                   <TbTemperatureCelsius />
