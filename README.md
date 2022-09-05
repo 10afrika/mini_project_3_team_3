@@ -14,7 +14,6 @@ The goal of this project is to create a site design in Figma, and then fully imp
 ## How to Run the project 
 1. Navigate to the project.
 2. Install npm packages using the npm install command.
-3. Get the backend server code from the respective developer's repository and run using the npm start command.
-4. Run the project using npm run dev. This runs the app in the development mode. Open http://localhost:3000 to view it in your browser.
+3. Run the project using npm run dev. This runs the app in the development mode. Open http://localhost:3000 to view it in your browser.
 ## Things to note
 - Figma Design: https://www.figma.com/file/D5rBzZT9uQOfyrGCTtCRmu/Landing-Page?node-id=0%3A1
