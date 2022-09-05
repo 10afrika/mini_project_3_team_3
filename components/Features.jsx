@@ -69,8 +69,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
 
 
   useEffect(() => {
-    console.log(`Filter Set: ${filter}`);
-    console.log(`Avatar Url: ${imgURL}`);
+
   }, [filter, imgURL]);
 
   const handleSubmit = async (e) => {
@@ -82,9 +81,8 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
     const weatherData = await axios
       .get(`https://api.weather.6afrika.mbandevelopers.com/weather-forecast`, {
         params: { city_name: cityName },
-      })
-      .then((res) => res.data)
-      .catch((err) => console.log(err.message));
+      }).then((res) => res.data)
+
 
 
     weatherData.forEach((data) => {
@@ -117,16 +115,15 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
 
   return (
 
-    <section id="features" className="  py-20 mt-15  w-screen">
+    <section id="features" className="  py-20 mt-[10px]  w-screen">
       <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
         <h1 className="text-3xl text-center text-black">Features</h1>
-        <p className="text-center text-gray-400 mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        <p className="text-center text-gray-500 mt-4">
+          Down below you can enter your city, view the day's weather and get some details about your city!
         </p>
       </div>
 
-      <div className="flex justify-center items-center gap-40 mr-20 mt-10">
+      <div className="flex justify-center items-center gap-[90px] mt-10 mx-auto">
         <form onSubmit={handleSubmit}>
           <input
             className="ml-20 shadow-md border-2 border-black border-rounded-md"
@@ -151,7 +148,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
         <div className="flex items-center py-4">
           <div className=" flex justify-center gap-8 w-full mt-6">
             {/* <!-- Product Tile Start --> */}
-            <div className=" w-80 h-64 rounded-lg text-gray-600 bg-bg-img hover:bg-gray-100 shadow-lg ">
+            <div className=" w-80 h-64 rounded-lg text-gray-600 hover:bg-gray-100 shadow-lg ml-20">
               <div className='flex items-center gap-x-5'>
                 <div className="ml-3 mt-5">
                   <div className="capitalize text-xl font-semibold"> {currentWeather.data[0].city_name} {currentWeather.data[0].country_code}</div>

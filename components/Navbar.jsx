@@ -1,9 +1,7 @@
 import React from 'react'
 import { WiDayFog } from "react-icons/wi"
 import Link from 'next/link'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai"
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import { useState } from 'react'
 import { useEffect } from 'react'
 
@@ -87,27 +85,7 @@ const Navbar = () => {
                                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>About</li>
                             </Link>
                         </ul>
-                        <div className='pt-40'>
-                            <p className='uppercase tracking-widest'>Contact Us</p>
-                            <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaLinkedinIn />
 
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub />
-
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineMail />
-
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
