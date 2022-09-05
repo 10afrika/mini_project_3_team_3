@@ -4,15 +4,15 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <section className="relative f mt-40 ml-25 md:ml-10 sm:mx-auto">
+        <section className="relative  mt-40 ml-25 md:ml-10 sm:mx-auto">
             <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
                 <div className="flex flex-1 flex-col items-center lg:items-start">
                     <h2 className="text-black text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
                         A Simple Weather Application
                     </h2>
-                    <p className="text-gray-400 text-lg text-center lg:text-left sm:text-center mb-6 text-md">
+                    <p className="text-gray-500 text-lg text-center lg:text-left sm:text-center mb-6 text-md">
                         Welcome to this simple weather application where you can view your daily weather reports along with your weekly forecasts for your city.
-                        You can even see some insights about your city. So scroll down and take a look.
+                        You can even see some insights about your city. You get your own little avatar as well. So scroll down and take a look.
 
                     </p>
 
